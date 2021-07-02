@@ -6,4 +6,4 @@
  - An OpenGL window displays the camera path in a 3D window
  - path data, translation and rotation, are displayed
  
-![](positional_tracking.jpg)
+![](https://raw.githubusercontent.com/wiki/stereolabs/zed-examples/gif/ZED_positional_tracking.gif)

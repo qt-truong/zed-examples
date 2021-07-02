@@ -6,4 +6,4 @@
  - real time 3D display of the current fused point cloud
  - press 'f' to un/follow the camera movement
 
-![](fused_point_cloud.jpg)
+![](https://raw.githubusercontent.com/wiki/stereolabs/zed-examples/gif/ZED_spatial_mapping_advanced.gif)

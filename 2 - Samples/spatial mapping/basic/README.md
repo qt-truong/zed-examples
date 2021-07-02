@@ -8,4 +8,4 @@
  - textures and post filters can be apply to the Mesh
  - final mesh is saved
 
-![](spatial_mapping.jpg)
+![](https://raw.githubusercontent.com/wiki/stereolabs/zed-examples/gif/ZED_spatial_mapping_basic.gif)

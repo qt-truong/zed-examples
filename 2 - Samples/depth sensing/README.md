@@ -6,4 +6,5 @@
  - Camera live point cloud is retreived
  - An OpenGL windows displays it in 3D
  
-![](depth_sensing.jpg)
+
+![](https://raw.githubusercontent.com/wiki/stereolabs/zed-examples/gif/ZED_depth_sensing.gif)

@@ -7,7 +7,6 @@
  - Bodies are tracked across time and space
  - Display bodies bounding boxes by pressing the `b` key
 
-![](body_tracking.jpg)
-
+![](https://raw.githubusercontent.com/wiki/stereolabs/zed-examples/gif/ZED_body_tracking.gif)
 
 >*NOTE: A [ZED 2](https://store.stereolabs.com/products/zed-2) is required to use this module.*
