@@ -1,54 +1,54 @@
-[submodule "4 - API/zed-python-api"]
-	path = 4 - API/zed-python-api
+[submodule "4-API/zed-python-api"]
+	path = 4-API/zed-python-api
 	url = https://github.com/stereolabs/zed-python-api.git
-[submodule "4 - API/zed-csharp-api"]
-	path = 4 - API/zed-csharp-api
+[submodule "4-API/zed-csharp-api"]
+	path = 4-API/zed-csharp-api
 	url = https://github.com/stereolabs/zed-csharp-api.git
-[submodule "3 - Integrations/zed-ros-wrapper"]
-	path = 3 - Integrations/zed-ros-wrapper
+[submodule "3-Integrations/zed-ros-wrapper"]
+	path = 3-Integrations/zed-ros-wrapper
 	url = https://github.com/stereolabs/zed-ros-wrapper.git
-[submodule "3 - Integrations/zed-ros2-wrapper"]
-	path = 3 - Integrations/zed-ros2-wrapper
+[submodule "3-Integrations/zed-ros2-wrapper"]
+	path = 3-Integrations/zed-ros2-wrapper
 	url = https://github.com/stereolabs/zed-ros2-wrapper.git
-[submodule "3 - Integrations/zed-opencv"]
-	path = 3 - Integrations/zed-opencv
+[submodule "3-Integrations/zed-opencv"]
+	path = 3-Integrations/zed-opencv
 	url = https://github.com/stereolabs/zed-opencv.git
-[submodule "3 - Integrations/zed-pytorch"]
-	path = 3 - Integrations/zed-pytorch
+[submodule "3-Integrations/zed-pytorch"]
+	path = 3-Integrations/zed-pytorch
 	url = https://github.com/stereolabs/zed-pytorch.git
-[submodule "3 - Integrations/zed-pcl"]
-	path = 3 - Integrations/zed-pcl
+[submodule "3-Integrations/zed-pcl"]
+	path = 3-Integrations/zed-pcl
 	url = https://github.com/stereolabs/zed-pcl.git
-[submodule "3 - Integrations/zed-matlab"]
-	path = 3 - Integrations/zed-matlab
+[submodule "3-Integrations/zed-matlab"]
+	path = 3-Integrations/zed-matlab
 	url = https://github.com/stereolabs/zed-matlab.git
-[submodule "3 - Integrations/zed-unity"]
-	path = 3 - Integrations/zed-unity
+[submodule "3-Integrations/zed-unity"]
+	path = 3-Integrations/zed-unity
 	url = https://github.com/stereolabs/zed-unity.git
-[submodule "3 - Integrations/zed-gstreamer"]
-	path = 3 - Integrations/zed-gstreamer
+[submodule "3-Integrations/zed-gstreamer"]
+	path = 3-Integrations/zed-gstreamer
 	url = https://github.com/stereolabs/zed-gstreamer.git
-[submodule "3 - Integrations/zed-tensorflow"]
-	path = 3 - Integrations/zed-tensorflow
+[submodule "3-Integrations/zed-tensorflow"]
+	path = 3-Integrations/zed-tensorflow
 	url = https://github.com/stereolabs/zed-tensorflow.git
-[submodule "3 - Integrations/zed-aruco"]
-	path = 3 - Integrations/zed-aruco
+[submodule "3-Integrations/zed-aruco"]
+	path = 3-Integrations/zed-aruco
 	url = https://github.com/stereolabs/zed-aruco.git
-[submodule "3 - Integrations/zed-openni"]
-	path = 3 - Integrations/zed-openni
+[submodule "3-Integrations/zed-openni"]
+	path = 3-Integrations/zed-openni
 	url = https://github.com/stereolabs/zed-openni.git
-[submodule "3 - Integrations/zed-yolo"]
-	path = 3 - Integrations/zed-yolo
+[submodule "3-Integrations/zed-yolo"]
+	path = 3-Integrations/zed-yolo
 	url = https://github.com/stereolabs/zed-yolo.git
-[submodule "3 - Integrations/zed-docker"]
-	path = 3 - Integrations/zed-docker
+[submodule "3-Integrations/zed-docker"]
+	path = 3-Integrations/zed-docker
 	url = https://github.com/stereolabs/zed-docker.git
-[submodule "3 - Integrations/zed-unreal-plugin"]
-	path = 3 - Integrations/zed-unreal-plugin
+[submodule "3-Integrations/zed-unreal-plugin"]
+	path = 3-Integrations/zed-unreal-plugin
 	url = https://github.com/stereolabs/zed-unreal-plugin.git
-[submodule "2 - Samples/zed-ros-examples"]
-	path = 2 - Samples/zed-ros-examples
+[submodule "2-Samples/zed-ros-examples"]
+	path = 2-Samples/zed-ros-examples
 	url = https://github.com/stereolabs/zed-ros-examples.git
-[submodule "2 - Samples/zed-unreal-examples"]
-	path = 2 - Samples/zed-unreal-examples
+[submodule "2-Samples/zed-unreal-examples"]
+	path = 2-Samples/zed-unreal-examples
 	url = https://github.com/stereolabs/zed-unreal-examples.git
