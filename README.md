@@ -1,9 +1,14 @@
-# Introduction
+## Introduction
 
 Stereolabs provides cameras that include stereo vision, motion, position and environmental sensors.
+
+![](image.png)
+
 Get the best out of the [ZED](https://www.stereolabs.com/store/) cameras thanks to the ZED SDK, a cross-platform library that will let you acces various modules, including:
 
-* **[Video](https://www.stereolabs.com/docs/video/)**: visualize, control and record images coming from your camera.
+* **[Video Capture](https://www.stereolabs.com/docs/video/)**: visualize, control and record images coming from your camera.
+
+* **[Local Streaming](https://www.stereolabs.com/docs/video/streaming/)**: stream the side by side video of your ZED camera over a local IP network (Ethernet or Wifi).
 
 * **[Sensors](https://www.stereolabs.com/docs/sensors/)**: access your ZED sensors to detect camera movements, relative altitude variations and much more.
 
@@ -13,18 +18,18 @@ Get the best out of the [ZED](https://www.stereolabs.com/store/) cameras thanks 
 
 * **[Spatial Mapping](https://www.stereolabs.com/docs/spatial-mapping/)**: understand and interact with the real-world by creating a 3D map of the environment.
 
-* **[Object Detection](https://www.stereolabs.com/docs/object-detection/)**: identify various objects in your images and get their 2D/3D position in the scene.
+* **[3D Object Detection](https://www.stereolabs.com/docs/object-detection/)**: identify various objects in your images and get their 2D/3D position in the scene.
 
 * **[Body Tracking](https://www.stereolabs.com/docs/body-tracking/)**: identify people in your images and get their 2D/3D keypoint coordinates in the scene.
 
 
-![](image.png)
 
-# About this repository
+
+## About this repository
 
 The `zed-sdk` umbrella repository gathers all the available repositories from Stereolabs organisation. Each individual repository is linked here as a [git submodule](https://git-scm.com/docs/git-submodule), but you can still clone its dedicated repository independently from `zed-sdk`.
 
-## Content 
+### Content 
 
 * **Tutorials**: get familiar with the ZED SDK API with this series of basic tutorials.
 
@@ -34,18 +39,18 @@ The `zed-sdk` umbrella repository gathers all the available repositories from St
 
 * **API**: choose your favourite language to get the best out of the SDK thanks to our wrappers. Available languages currently include Python and C#.
 
-# ZED SDK Download
+## ZED SDK Download
 
 You can find the latest release of the SDK in our [Developer Center](https://www.stereolabs.com/developers/release/)
 
-# ZED SDK Installation
+## ZED SDK Installation
 
 Installation instructions are availble for [Windows](https://www.stereolabs.com/docs/installation/windows/), [Linux](https://www.stereolabs.com/docs/installation/linux/) and [Jetson](https://www.stereolabs.com/docs/installation/jetson/).
 
-# Documentation
+## Documentation
 
 General [documentation](https://www.stereolabs.com/docs/) gives in-depth information about the products and their functionalities. You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.
 
-# Support
+## Support
 
 If you need help or more informations check our [Support](https://support.stereolabs.com/) page or join our [Community](https://community.stereolabs.com/).
