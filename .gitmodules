@@ -55,3 +55,9 @@
 [submodule "2-Samples/zed-ros2-examples"]
 	path = 2-Samples/zed-ros2-examples
 	url = https://github.com/stereolabs/zed-ros2-examples.git
+[submodule "3-Integrations/zed-opengl"]
+	path = 3-Integrations/zed-opengl
+	url = https://github.com/stereolabs/zed-opengl.git
+[submodule "3-Integrations/zed-openpose"]
+	path = 3-Integrations/zed-openpose
+	url = https://github.com/stereolabs/zed-openpose.git

@@ -1,43 +1,51 @@
-# ZED SDK
+# Introduction
 
-The ZED SDK 3.5 has been released ! Check out our [changelog](CHANGELOG.md) to see all the available features and bug fixes.
+Stereolabs provides cameras that include stereo vision, motion, position and environmental sensors.
+Get the best out of the [ZED](https://www.stereolabs.com/store/) cameras thanks to the ZED SDK, a cross-platform library that will let you acces various modules, including:
 
-You will find the download links below:
+* **[Video](https://www.stereolabs.com/docs/video/)**: visualize, control and record images coming from your camera.
 
-## CUDA 11.1
+* **[Sensors](https://www.stereolabs.com/docs/sensors/)**: access your ZED sensors to detect camera movements, relative altitude variations and much more.
 
-[ZED SDK for Windows 10](https://download.stereolabs.com/zedsdk/3.5/cu111/win) 3.5.0 
+* **[Depth Sensing](https://www.stereolabs.com/docs/depth-sensing/)**: thanks to stereo vision technology, capture high-resolution 3D videos of your scene and estimate depth and motion by comparing the displacement of pixels between the left and right images.
 
-[ZED SDK for Ubuntu 20](https://download.stereolabs.com/zedsdk/3.5/cu111/ubuntu20) 3.5.0 
+* **[Positional Tracking](https://www.stereolabs.com/docs/positional-tracking/)**: track the movement of your camera in 3D space with six degrees of freedom (6DoF).
 
-[ZED SDK for Ubuntu 18](https://download.stereolabs.com/zedsdk/3.5/cu111/ubuntu18) 3.5.0 
+* **[Spatial Mapping](https://www.stereolabs.com/docs/spatial-mapping/)**: understand and interact with the real-world by creating a 3D map of the environment.
 
-[ZED SDK for Ubuntu 16](https://download.stereolabs.com/zedsdk/3.5/cu111/ubuntu16) 3.5.0 
+* **[Object Detection](https://www.stereolabs.com/docs/object-detection/)**: identify various objects in your images and get their 2D/3D position in the scene.
 
-## CUDA 11.0
+* **[Body Tracking](https://www.stereolabs.com/docs/body-tracking/)**: identify people in your images and get their 2D/3D keypoint coordinates in the scene.
 
-[ZED SDK for Windows 10](https://download.stereolabs.com/zedsdk/3.5/cu110/win) 3.5.0 
 
-[ZED SDK for Ubuntu 20](https://download.stereolabs.com/zedsdk/3.5/cu110/ubuntu20) 3.5.0 
+![](image.png)
 
-[ZED SDK for Ubuntu 18](https://download.stereolabs.com/zedsdk/3.5/cu110/ubuntu18) 3.5.0 
+# About this repository
 
-[ZED SDK for Ubuntu 16](https://download.stereolabs.com/zedsdk/3.5/cu110/ubuntu16) 3.5.0 
+The `zed-sdk` umbrella repository gathers all the available repositories from Stereolabs organisation. Each individual repository is linked here as a [git submodule](https://git-scm.com/docs/git-submodule), but you can still clone its dedicated repository independently from `zed-sdk`.
 
-## CUDA 10.2
+## Content 
 
-[ZED SDK for Windows 10](https://download.stereolabs.com/zedsdk/3.5/cu102/win) 3.5.0 
+* **Tutorials**: get familiar with the ZED SDK API with this series of basic tutorials.
 
-[ZED SDK for Ubuntu 18](https://download.stereolabs.com/zedsdk/3.5/cu102/ubuntu18) 3.5.0 
+* **Samples**: learn how to use the SDK features to build applications with your ZED camera.
 
-[ZED SDK for Ubuntu 16](https://download.stereolabs.com/zedsdk/3.5/cu102/ubuntu16) 3.5.0 
+* **Integrations**: interface your ZED camera with multiple third-party libraries and environments.
 
-## NVIDIA Jetson
+* **API**: choose your favourite language to get the best out of the SDK thanks to our wrappers. Available languages currently include Python and C#.
 
-[ZED SDK for JetPack 4.5](https://download.stereolabs.com/zedsdk/3.5/jp45/jetsons) 3.5.0 (Jetson Nano, TX2, TX2 NX, Xavier AGX/NX, CUDA 10.2)
+# ZED SDK Download
 
-[ZED SDK for JetPack 4.4](https://download.stereolabs.com/zedsdk/3.5/jp44/jetsons) 3.5.0 (Jetson Nano, TX2, Xavier AGX/NX, CUDA 10.2)
+You can find the latest release of the SDK in our [Developer Center](https://www.stereolabs.com/developers/release/)
 
---------------------------------------
+# ZED SDK Installation
+
+Installation instructions are availble for [Windows](https://www.stereolabs.com/docs/installation/windows/), [Linux](https://www.stereolabs.com/docs/installation/linux/) and [Jetson](https://www.stereolabs.com/docs/installation/jetson/).
+
+# Documentation
+
+General [documentation](https://www.stereolabs.com/docs/) gives in-depth information about the products and their functionalities. You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.
+
+# Support
 
 If you need help or more informations check our [Support](https://support.stereolabs.com/) page or join our [Community](https://community.stereolabs.com/).
