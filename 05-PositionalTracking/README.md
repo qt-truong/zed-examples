@@ -5,8 +5,8 @@ Positional tracking is the ability of a device to estimate its position relative
 **Overview**
 
 * [Positional Tracking Configuration](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#positional-tracking-configuration)
-* [Enabling Spatial Mapping](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#enabling-spatial-mapping)
-* [Getting a 3D Map](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-a-3d-map)
+* [Enabling Positional Tracking](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#enabling-positional-tracking)
+* [Getting Pose](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-pose)
 * [Code Example](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#code-example)
 
 ## Positional Tracking Configuration
