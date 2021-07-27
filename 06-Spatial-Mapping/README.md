@@ -166,4 +166,4 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/s
 * [Spatial Mapping Parameters](https://www.stereolabs.com/docs/spatial-mapping/#spatial-mapping-parameters)
 * [Spatial Mapping Configuration](https://www.stereolabs.com/docs/spatial-mapping/using-mapping/#spatial-mapping-configuration)
 * [Getting a 3D Map](https://www.stereolabs.com/docs/spatial-mapping/using-mapping/#getting-a-3d-map)
-* [Plane Detection](https://www.stereolabs.com/docs/spatial-mapping/plane-detection/))
+* [Plane Detection](https://www.stereolabs.com/docs/spatial-mapping/plane-detection/)
