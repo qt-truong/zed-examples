@@ -1,4 +1,4 @@
-# ZED Depth Sensing API
+# ZED Depth Sensing
 
 The ZED stereo camera reproduces the way human binocular vision works. Human eyes are horizontally separated by about 65 mm on average. Thus, each eye has a slightly different view of the world around. By comparing these two views, our brain can infer not only depth but also 3D motion in space.
 
@@ -9,9 +9,9 @@ Likewise, Stereolabs stereo cameras have two eyes separated by 6 to 12 cm which 
 * [How It Works](#how-it-works)
 * [Getting Depth Data](#getting-depth-data)
 * [Depth Sensing Configuration](#depth-sensing-configuration)
-* [Documentation](#documentation)
 * [Code Examples](#code-examples)
 * [Integrations](#integrations)
+* [Documentation](#documentation)
 
 ## How it works
 
@@ -21,7 +21,7 @@ Depth maps captured by the ZED store a distance value (Z) for each pixel (X, Y) 
 
 Depth maps cannot be displayed directly as they are encoded on 32 bits. To display the depth map, a monochrome (grayscale) 8-bit representation is necessary with values between [0, 255], where 255 represents the closest possible depth value and 0 the most distant possible depth value.
 
-## 3D Point Cloud
+### 3D Point Cloud
 
 Another common way of representing depth information is by a 3-D point cloud. A point cloud can be seen as a depth map in three dimensions. While a depth map only contains the distance or Z information for each pixel, a point cloud is a collection of 3D points (X,Y,Z) that represent the external surface of the scene and can contain color information.
 

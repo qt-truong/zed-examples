@@ -1,4 +1,4 @@
-# Positional Tracking
+# ZED Positional Tracking
 
 Positional tracking is the ability of a device to estimate its position relative to the world around it. Also called motion tracking or odometry, this is used to track the movement of a camera or user in 3D space with six degrees of freedom (6DoF).
 
@@ -7,9 +7,9 @@ Positional tracking is the ability of a device to estimate its position relative
 * [How It Works](#how-it-works)
 * [Getting Pose](#getting-pose)
 * [Positional Tracking Configuration](#positional-tracking-configuration)
-* [Docs](#documentation)
 * [Code Examples](#code-examples)
 * [Integrations](#integrations)
+* [Docs](#documentation)
 
 
 ## How It Works
@@ -88,11 +88,11 @@ To read more about tracking configuration, see [using the API](https://www.stere
 
 
 ## Code Examples
-For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
+For code examples, check out the [Tutorial](../09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](../10-Samples/positional%20tracking) on GitHub.
 
 
 ## Integrations
-Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
+Check the [Integrations](../11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
 
 
 ## Documentation
