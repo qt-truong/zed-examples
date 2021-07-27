@@ -26,7 +26,7 @@ The following pose data is returned:
 
 - **Orientation**: the orientation of the camera in space is available as a quaternion [X, Y, Z, W]. A quaternion can be directly manipulated to reflect yaw, pitch and roll in different coordinate frames.
 
-The `POSE` class also contains timestamp, confidence value and a rotation matrix that describes the rotation of the camera with respect to the World Frame. The pose is relative to a reference [coordinate frame](/positional-tracking/coordinate-frames/), usually the World Frame which is fixed in space.
+The `POSE` class also contains timestamp, confidence value and a rotation matrix that describes the rotation of the camera with respect to the World Frame. The pose is relative to a reference [coordinate frame](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/), usually the World Frame which is fixed in space.
 
 
 **C++**
@@ -99,7 +99,7 @@ Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/1
 For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or these specific sections:
 
 * [Positional Tracking Overview](https://www.stereolabs.com/docs/positional-tracking/)
-* [Getting Pose](stereolabs.com/docs/positional-tracking/using-tracking/#getting-pose)
+* [Getting Pose](https://www.stereolabs.com/docs/positional-tracking/using-tracking/#getting-pose)
 * [Tracking States](https://www.stereolabs.com/docs/positional-tracking/using-tracking/#tracking-states)
 * [Area Memory](https://www.stereolabs.com/docs/positional-tracking/area-memory/)
 * [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)

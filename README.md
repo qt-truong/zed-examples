@@ -9,14 +9,14 @@ Get the best out of the [ZED](https://www.stereolabs.com/store/) cameras thanks 
 
 | Module     | Description |
 | ----------- | ---------- |
-| **[Video Capture](https://www.stereolabs.com/docs/video/)** | Visualize, control and record images coming from your camera. |
-| **[Local Streaming](https://www.stereolabs.com/docs/video/streaming/)** | Stream the side by side video of your ZED camera over a local IP network (Ethernet or Wifi). |
-| **[Sensors](https://www.stereolabs.com/docs/sensors/)** | Access your ZED sensors to detect camera movements, relative altitude variations and much more. |
-| **[Depth Sensing](https://www.stereolabs.com/docs/depth-sensing/)** | Thanks to stereo vision technology, capture high-resolution 3D videos of your scene and estimate depth and motion by comparing the displacement of pixels between the left and right images. |
-| **[Positional Tracking](https://www.stereolabs.com/docs/positional-tracking/)** | Track the movement of your camera in 3D space with six degrees of freedom (6DoF). |
-| **[Spatial Mapping](https://www.stereolabs.com/docs/spatial-mapping/)**| Understand and interact with the real-world by creating a 3D map of the environment. |
-| **[3D Object Detection](https://www.stereolabs.com/docs/object-detection/)** | Identify various objects in your images and get their 2D/3D position in the scene. |
-| **[Body Tracking](https://www.stereolabs.com/docs/body-tracking/)** | Identify people in your images and get their 2D/3D keypoint coordinates in the scene. |
+| **[Video Capture](01-Video-Capture)** | Visualize, control and record images coming from your camera. |
+| **[Local Streaming](02-Local-Streaming)** | Stream the side by side video of your ZED camera over a local IP network (Ethernet or Wifi). |
+| **[Sensors](03-Sensors)** | Access your ZED sensors to detect camera movements, relative altitude variations and much more. |
+| **[Depth Sensing](04-Depth-Sensing)** | Thanks to stereo vision technology, capture high-resolution 3D videos of your scene and estimate depth and motion by comparing the displacement of pixels between the left and right images. |
+| **[Positional Tracking](05-Positional-Tracking)** | Track the movement of your camera in 3D space with six degrees of freedom (6DoF). |
+| **[Spatial Mapping](06-Spatial-Mapping)**| Understand and interact with the real-world by creating a 3D map of the environment. |
+| **[3D Object Detection](07-Object-Detection)** | Identify various objects in your images and get their 2D/3D position in the scene. |
+| **[Body Tracking](08-Body-Tracking)** | Identify people in your images and get their 2D/3D keypoint coordinates in the scene. |
 
 
 ## About this repository
@@ -27,13 +27,13 @@ The `zed-sdk` umbrella repository gathers all the available repositories from St
 
 Along with dedicated documentation guiding you through the API for each of the above modules, this repository also contains code examples giving you a deeper insight on the ZED SDK capabilities :
 
-* **Tutorials**: get familiar with the ZED SDK API with this series of basic tutorials.
+* **[Tutorials](09-Tutorials)**: get familiar with the ZED SDK API with this series of basic tutorials.
 
-* **Samples**: learn how to use the SDK features to build more complex applications with your ZED camera.
+* **[Samples](10-Samples)**: learn how to use the SDK features to build more complex applications with your ZED camera.
 
-* **Integrations**: interface your ZED camera with multiple third-party libraries and environments.
+* **[Integrations](11-Integrations)**: interface your ZED camera with multiple third-party libraries and environments.
 
-* **API**: choose your favourite language to get the best out of the SDK thanks to our wrappers. Available languages currently include Python and C#.
+* **[API](12-API)**: choose your favourite language to get the best out of the SDK thanks to our wrappers. Available languages currently include Python and C#.
 
 ## ZED SDK Download
 
@@ -49,7 +49,7 @@ The ZED SDK can be installed on a broad range of platforms and you will find ins
 - [Ubuntu (16, 18, 20)](https://www.stereolabs.com/docs/installation/linux/)
 - [NVIDIA Jetson](https://www.stereolabs.com/docs/installation/jetson/)
 
-### Recommended specifications for ZED SDK
+### Recommended specifications
 
 The ZED camera is **UVC (Universal Video Class) compliant** so you can capture the left and right video streams of the ZED on any Windows and Linux platforms. However, getting access to advanced features of the ZED SDK requires proper hardware to offer sustained and optimal performance.
 
