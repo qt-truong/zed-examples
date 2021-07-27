@@ -104,4 +104,4 @@ General [documentation](https://www.stereolabs.com/docs/) gives in-depth informa
 
 ## Support
 
-If you need help or more informations check our [Support](https://support.stereolabs.com/) page or join our [Community](https://community.stereolabs.com/).
+If you need help or more information check our [Support](https://support.stereolabs.com/) page or join our [Community](https://community.stereolabs.com/).

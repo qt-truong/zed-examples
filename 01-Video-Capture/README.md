@@ -5,99 +5,34 @@ The ZED API provides low-level access to the camera hardware and video features,
 
 **Overview**
 
-* [Camera Configuration](https://github.com/qt-truong/zed-examples/tree/master/01-VideoCapture#camera-configuration)
-* [Image Capture](https://github.com/qt-truong/zed-examples/tree/master/01-VideoCapture#image-capture)
-* [Video Recording](https://github.com/qt-truong/zed-examples/tree/master/01-VideoCapture#video-recording)
-* [Video Playback](https://github.com/qt-truong/zed-examples/tree/master/01-VideoCapture#video-playback)
-* [Code Examples](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/camera%20control)
+* [How It Works](#how-it-works)
+* [Camera Configuration](#camera-configuration)
+* [Getting Images](#getting-images)
+* [Code Examples](#code-examples)
+* [Integrations](#integrations)
+* [Docs](#documentation)
+
+## How It Works
+
+The left and right video frames of the ZED Camera are synchronized and streamed as a single uncompressed video frame, and you can choose your preferred output format among the following :
+
+* Left or Right rectified 
+* Side-by-side view
+* Left or Right unrectified
+* Left or Right grayscale
+
+The ZED camera features an onboard **ISP (Image Signal Processor)** that performs various image processing algorithms on raw images captured by the dual image sensors.
 
 ## Camera Configuration
+
 To configure the camera, create a Camera object and specify your `InitParameters`. Initial parameters let you adjust camera resolution, FPS, depth sensing parameters and more. These parameters can only be set before opening the camera and cannot be changed while the camera is in use. Note that `InitParameters` contains a default configuration.
 
-**C++**
-```cpp
-// Create a ZED camera object
-Camera zed;
+To read more about how to configure your camera using the API, read our [dedicated section](http://localhost:1313/docs/video/using-video/#camera-configuration).
 
-// Set configuration parameters
-InitParameters init_params;
-init_params.camera_resolution = RESOLUTION_HD1080;
-init_params.camera_fps = 30;
+## Getting Images
 
-// Open the camera
-err = zed.open(init_params);
-if (err != SUCCESS)
-    exit(-1);
-```
+### Live Image Capture
 
-**Python**
-```python
-# Create a ZED camera object
-zed = sl.Camera()
-
-# Set configuration parameters
-init_params = sl.InitParameters()
-init_params.camera_resolution = sl.RESOLUTION.RESOLUTION_HD1080
-init_params.camera_fps = 30
-
-# Open the camera
-err = zed.open(init_params)
-if err != sl.ERROR_CODE.SUCCESS:
-    exit(-1)
-```
-
-**C#**
-```csharp
-// Create a ZED camera object
-sl.Camera zed = new sl.Camera(0);
-
-// Set configuration parameters
-sl.InitParameters init_parameters = new sl.InitParameters();
-init_parameters.resolution = sl.RESOLUTION.HD1080;
-init_parameters.cameraFPS = 30;
-
-// Open the camera
-sl.ERROR_CODE err = zed.Open(ref init_params);
-if (err != sl.ERROR_CODE.SUCCESS)
-    Environment.Exit(-1);
-```
-
-Camera settings such as exposure, white balance and others can be manually set at runtime using `setCameraSettings()`.
-
-**C++**
-```cpp
-// Set exposure in manual mode at 50% of camera framerate
-zed.setCameraSettings(CAMERA_SETTINGS_EXPOSURE, 50, false);
-// Set white balance to 4600K
-zed.setCameraSettings(CAMERA_SETTINGS_WHITE_BALANCE, 4600, false);
-// Reset to auto exposure
-zed.setCameraSettings(CAMERA_SETTINGS_EXPOSURE, -1, true);
-```
-
-**Python**
-```python
-# Set exposure to 50% of camera framerate
-zed.set_camera_settings(sl.CAMERA_SETTINGS.CAMERA_SETTINGS_EXPOSURE, 50, False)
-# Set white balance to 4600K
-zed.set_camera_settings(sl.CAMERA_SETTINGS.CAMERA_SETTINGS_WHITE_BALANCE, 4600, False)
-# Reset to auto exposure
-zed.set_camera_settings(sl.CAMERA_SETTINGS.CAMERA_SETTINGS_EXPOSURE, -1, True)
-```
-
-**C#**
-```csharp
-// Set exposure in manual mode at 50% of camera framerate
-zed.SetCameraSettings(sl.VIDEO_SETTINGS.EXPOSURE, 50);
-// Set white balance to 4600K
-zed.SetCameraSettings(sl.VIDEO_SETTINGS.WHITEBALANCE, 4600);
-//Reset to auto exposure
-zed.SetCameraSettings(sl.VIDEO_SETTINGS.EXPOSURE, -1);
-```
-
-To see the list of available video modes and settings, read [Camera Controls doc](https://www.stereolabs.com/docs/video/camera-controls/).
-
-
-## Image Capture
 To capture images from the ZED, specify your `RuntimeParameters` and call `grab()` to grab a new frame and `retrieveImage()` to retrieve the grabbed frame. `retrieveImage()` lets you select between different views such as left, right, unrectified and grayscale images.
 
 **C++**
@@ -129,7 +64,7 @@ if (zed.Grab(ref runtimeParameters) == ERROR_CODE.SUCCESS) {
 ```
 
 
-## Video Recording
+### Video Recording
 The ZED SDK uses Stereolabs SVO format to store videos along with additional metadata such as timestamp and sensor data.
 
 To record SVO files, you need to enable the Recording module with `enableRecording()`. Specify an output file name (eg: output.svo) and `SVO_COMPRESSION_MODE`, then save each  grabbed frame using `record()`. SVO lets you record video and associated metadata (timestamp, IMU data and more if available).
@@ -188,98 +123,22 @@ while (!exit_app) {
 zed.DisableRecording();
 ```
 
-## Video Playback
-To play SVO files, simply add the file path as argument in `setFromSVOFile()`.  When loading SVO files, the ZED API will behave as if a ZED was connected and live feed was available. Every module of the ZED API will be available: depth, tracking, spatial mapping and more. When an SVO file is read entirely, `END_OF_SVOFILE_REACHED` error code is returned.
-
-**C++**
-```cpp
-// Create a ZED camera object
-Camera zed;
-
-// Set SVO path for playback
-String input_path(argv[1]);
-InitParameters init_parameters;
-init_parameters.input.setFromSVOFile(input_path);
-
-// Open the ZED
-err = zed.open(init_parameters);
-
-sl::Mat svo_image;
-while (!exit_app) {
-    if (zed.grab(ref runtimeParameters) == SUCCESS) {
-        // Read side by side frames stored in the SVO
-        zed.retrieveImage(svo_image, VIEW::SIDE_BY_SIDE);
-        // Get frame count      
-        int svo_position = zed.getSVOPosition();
-    }
-    else if (zed.grab() == END_OF_SVOFILE_REACHED) {
-        std::cout << "SVO end has been reached. Looping back to first frame" << std::endl;
-        zed.setSVOPosition(0);
-    }
-}
-```
-
-**Python**
-```python
-# Create a ZED camera object
-zed = sl.Camera()
-
-# Set SVO path for playback
-input_path = sys.argv[1]
-init_parameters = sl.InitParameters()
-init_parameters.set_from_svo_file(input_path)
-
-# Open the ZED
-zed = sl.Camera()
-err = zed.open(init_parameters)
-
-svo_image = sl.Mat()
-while !exit_app:
-  if zed.grab() == sl.ERROR_CODE.SUCCESS:
-    # Read side by side frames stored in the SVO
-    zed.retrieve_image(svo_image, sl.VIEW.SIDE_BY_SIDE)
-    # Get frame count
-    svo_position = zed.get_svo_position();
-  elif zed.grab() == sl.ERROR_CODE.END_OF_SVOFILE_REACHED:
-    print("SVO end has been reached. Looping back to first frame")
-    zed.set_svo_position(0)
-```
-
-**C#**
-```csharp
-// Create a ZED camera object
-sl.Camera zed = new sl.Camera(0);
-
-sl.RuntimeParameters runtimeParameters = new sl.RuntimeParameters();
-
-// Set SVO path for playback
-string input_path = argv[0];
-sl.InitParameters init_parameters = new sl.InitParameters();
-init_parameters.inputType = sl.INPUT_TYPE.SVO;
-init_parameters.pathSVO = input_path;
-
-// Open the ZED
-err = zed.Open(ref init_parameters);
-
-sl.Mat svo_image = new sl.Mat();
-while (!exit_app) {
-    if (zed.Grab(ref runtimeParameters) == sl.ERROR_CODE.SUCCESS) {
-        // Read side by side frames stored in the SVO
-        zed.RetrieveImage(svoImage, sl.VIEW.SIDE_BY_SIDE, sl.MEM.CPU);
-        // Get frame count      
-        int svo_position = zed.GetSVOPosition();
-    }
-    if (zed.GetSVOPosition() >= zed.GetSVONumberOfFrames() - 1) {
-        Console.WriteLine("SVO end has been reached. Looping back to first frame");
-        zed.SetSVOPosition(0);
-    }
-}
-```
+Once your SVO is properly recorded, you can [play it back](https://www.stereolabs.com/docs/video/using-video/#video-playback) or load it as an input to your ZED programs, enabling the ZED API to behave as if a ZED Camera was connected and live feed was available. Every module of the ZED API will be available: depth, tracking, spatial mapping and more.
 
 ## Code Examples
-Get started with stereo video capture, recording and streaming using the following code samples on GitHub:
+For code examples, check out our Video Capture [Tutorial](../09-Tutorials/tutorial%202%20-%20image%20capture), [Camera Control](../10-Samples/camera%20control), [SVO Recording](../10-Samples/svo%20recording/recording) and [SVO Playback](../10-Samples/svo%20recording/playback) samples in this repository.
 
-- [Camera Control](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/camera%20control)
-- [SVO Recording](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/svo%20recording/recording), [SVO Playback](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/svo%20recording/playback) and [SVO Export](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/svo%20recording/export)
 
-For more information, visit our [documentation](https://www.stereolabs.com/docs/video/) and our [API Reference](https://www.stereolabs.com/docs/api/).
+## Integrations
+Check the [Integrations](../11-Integrations#overview) list to use the ZED with your favorite suite of tools and libraries.
+
+## Documentation
+For more information, read the [Documentation](https://www.stereolabs.com/docs/video/) or these specific sections:
+
+* [Camera Controls](https://www.stereolabs.com/docs/video/camera-controls/)
+* [Camera Calibration](https://www.stereolabs.com/docs/video/camera-calibration/)
+* [Video Recording](https://www.stereolabs.com/docs/video/recording/)
+* [Multi Camera](https://www.stereolabs.com/docs/video/multi-camera/)
+* [Using the API](https://www.stereolabs.com/docs/video/using-video/)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.
