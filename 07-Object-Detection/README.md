@@ -108,3 +108,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/o
 * [Object Detection Overview](https://www.stereolabs.com/docs/object-detection/)
 * [Detection outputs](https://www.stereolabs.com/docs/object-detection/#detection-outputs)
 * [Object Detection Configuration](https://www.stereolabs.com/docs/object-detection/using-object-detection/#object-detection-configuration)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.

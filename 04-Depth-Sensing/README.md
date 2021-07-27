@@ -87,3 +87,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/d
 * [Depth Settings](https://www.stereolabs.com/docs/depth-sensing/depth-settings/)
 * [Confidence Filtering](https://www.stereolabs.com/docs/depth-sensing/confidence-filtering/)
 * [Using the API](https://www.stereolabs.com/docs/depth-sensing/using-depth/)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.

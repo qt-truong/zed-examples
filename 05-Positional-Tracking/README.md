@@ -104,3 +104,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/p
 * [Area Memory](https://www.stereolabs.com/docs/positional-tracking/area-memory/)
 * [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)
 * [Using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.

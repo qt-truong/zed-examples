@@ -167,3 +167,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/s
 * [Spatial Mapping Configuration](https://www.stereolabs.com/docs/spatial-mapping/using-mapping/#spatial-mapping-configuration)
 * [Getting a 3D Map](https://www.stereolabs.com/docs/spatial-mapping/using-mapping/#getting-a-3d-map)
 * [Plane Detection](https://www.stereolabs.com/docs/spatial-mapping/plane-detection/)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.

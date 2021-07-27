@@ -153,3 +153,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/v
 * [Streaming Modes](https://www.stereolabs.com/docs/video/streaming/#streaming-modes)
 * [Streaming Protocol](https://www.stereolabs.com/docs/video/streaming/#streaming-protocol)
 * [Using the API](https://www.stereolabs.com/docs/video/streaming/#using-the-streaming-api)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.

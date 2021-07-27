@@ -132,3 +132,5 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/s
 * [Temperature Sensors](https://www.stereolabs.com/docs/sensors/temperature/)
 * [Time Synchronization](https://www.stereolabs.com/docs/sensors/time-synchronization/)
 * [Using the API](https://www.stereolabs.com/docs/sensors/using-sensors/)
+
+You can also check out our [API Reference](https://www.stereolabs.com/docs/api/) for more details about the available functions provided by the SDK.
