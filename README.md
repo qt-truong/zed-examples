@@ -25,15 +25,15 @@ The `zed-sdk` umbrella repository gathers all the available repositories from St
 
 ### Content 
 
-Along with dedicated documentation guiding you through the API for each of the above modules, this repository also contains code examples giving you a deeper insight on the ZED SDK capabilities :
+Each of the above module has its own dedicated folder in which you will find documentation guiding you through the API as well as code examples showing you concrete usage of the module. In addition, the repository provides content giving you a deeper insight into the ZED SDK capabilities :
 
 * **[Tutorials](09-Tutorials)**: get familiar with the ZED SDK API with this series of basic tutorials.
-
-* **[Samples](10-Samples)**: learn how to use the SDK features to build more complex applications with your ZED camera.
 
 * **[Integrations](11-Integrations)**: interface your ZED camera with multiple third-party libraries and environments.
 
 * **[API](12-API)**: choose your favourite language to get the best out of the SDK thanks to our wrappers. Available languages currently include Python and C#.
+
+* **[Other](10-Other)**: play around with these additional general samples showing the use of the SDK.
 
 ## ZED SDK Download
 
