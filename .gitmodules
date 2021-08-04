@@ -1,12 +1,3 @@
-[submodule "10-Samples/zed-ros-examples"]
-	path = 10-Samples/zed-ros-examples
-	url = https://github.com/stereolabs/zed-ros-examples.git
-[submodule "10-Samples/zed-ros2-examples"]
-	path = 10-Samples/zed-ros2-examples
-	url = https://github.com/stereolabs/zed-ros2-examples.git
-[submodule "10-Samples/zed-unreal-examples"]
-	path = 10-Samples/zed-unreal-examples
-	url = https://github.com/stereolabs/zed-unreal-examples.git
 [submodule "11-Integrations/zed-aruco"]
 	path = 11-Integrations/zed-aruco
 	url = https://github.com/stereolabs/zed-aruco.git
@@ -61,3 +52,12 @@
 [submodule "12-API/zed-python-api"]
 	path = 12-API/zed-python-api
 	url = https://github.com/stereolabs/zed-python-api.git
+[submodule "11-Integrations/zed-ros-examples"]
+	path = 11-Integrations/zed-ros-examples
+	url = https://github.com/stereolabs/zed-ros-examples.git
+[submodule "11-Integrations/zed-ros2-examples"]
+	path = 11-Integrations/zed-ros2-examples
+	url = https://github.com/stereolabs/zed-ros2-examples.git
+[submodule "11-Integrations/zed-unreal-examples"]
+	path = 11-Integrations/zed-unreal-examples
+	url = https://github.com/stereolabs/zed-unreal-examples.git
