@@ -73,7 +73,7 @@ To read more about depth sensing configuration, see [using the API](https://www.
 
 ## Code Examples
 
-For code examples, check out the [Tutorial](../09-Tutorials/tutorial%203%20-%20depth%20sensing) and [Sample](../10-Samples/depth%20sensing).
+For code examples, check out the [Tutorial](../09-Tutorials/tutorial%203%20-%20depth%20sensing) and [Sample](examples).
 
 
 ## Integrations

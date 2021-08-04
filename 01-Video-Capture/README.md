@@ -126,7 +126,7 @@ zed.DisableRecording();
 Once your SVO is properly recorded, you can [play it back](https://www.stereolabs.com/docs/video/using-video/#video-playback) or load it as an input to your ZED programs, enabling the ZED API to behave as if a ZED Camera was connected and live feed was available. Every module of the ZED API will be available: depth, tracking, spatial mapping and more.
 
 ## Code Examples
-For code examples, check out our Video Capture [Tutorial](../09-Tutorials/tutorial%202%20-%20image%20capture), [Camera Control](../10-Samples/camera%20control), [SVO Recording](../10-Samples/svo%20recording/recording) and [SVO Playback](../10-Samples/svo%20recording/playback) samples in this repository.
+For code examples, check out our Video Capture [Tutorial](../09-Tutorials/tutorial%202%20-%20image%20capture), [Camera Control](examples/Camera-Control), [SVO Recording](examples/SVO-Recording/recording), [SVO Playback](examples/SVO-Recording/playback) and [SVO Export](examples/SVO-Recording/export) samples in this repository.
 
 
 ## Integrations

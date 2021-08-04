@@ -96,7 +96,7 @@ To read more about object detection configuration, check this [dedicated section
 
 
 ## Code Examples
-For code examples, check out the 3D Object Detetection [Tutorial](../09-Tutorials/tutorial%206%20-%20object%20detection) and [Sample](../10-Samples/object%20detection) in this repository.
+For code examples, check out the 3D Object Detetection [Tutorial](../09-Tutorials/tutorial%206%20-%20object%20detection) and [Sample](examples) in this repository.
 
 ## Integrations
 Check the [Integrations](../11-Integrations#overview) list to use object detection with your favorite suite of tools and libraries.

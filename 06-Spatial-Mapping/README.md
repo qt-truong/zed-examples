@@ -153,7 +153,7 @@ Spatial Mapping configuration is similar to previous modules. Use `InitParameter
 
 
 ## Code Examples
-For code examples, check out the Spatial Mapping [Tutorial](../09-Tutorials/tutorial%205%20-%20spatial%20mapping) and [Sample](../10-Samples/spatial%20mapping) in this repository.
+For code examples, check out the Spatial Mapping [Tutorial](../09-Tutorials/tutorial%205%20-%20spatial%20mapping) and [Sample](examples) in this repository.
 
 
 ## Integrations

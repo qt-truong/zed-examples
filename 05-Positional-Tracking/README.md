@@ -88,7 +88,7 @@ To read more about tracking configuration, see [using the API](https://www.stere
 
 
 ## Code Examples
-For code examples, check out the [Tutorial](../09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](../10-Samples/positional%20tracking) in this repository.
+For code examples, check out the [Tutorial](../09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](examples) in this repository.
 
 
 ## Integrations

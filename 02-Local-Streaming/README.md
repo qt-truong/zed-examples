@@ -139,7 +139,7 @@ zed.Close();
 
 ## Code Example
 
-See the [Camera Streaming](../10-Samples/camera%20streaming) samples for more information on streaming a video and using a stream as input.
+See the [Camera Streaming](examples) samples for more information on streaming a video and using a stream as input.
 
 ## Integrations
 
